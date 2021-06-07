@@ -1,0 +1,48 @@
+-- django project 
+
+make a new project pycharm
+
+--> terminal pycharm means virtual environment
+
+(terminal pycharm) pip3 install django
+(terminal pycharm) python3 -m django --version
+
+(terminal pycharm)django-admin startproject website <here "website" is a project name>
+(terminal pycharm  > website) python3 manage.py runsserver
+(terminal pycharm  > website) python3 manage.py startapp application_name 
+(terminal pycharm  > website) python3 manage.py collectstatic
+(terminal pycharm  > website) python3 manage.py makemigrations
+(terminal pycharm  > website) python3 manage.py sqlmigrate travellingApp 0001
+(terminal pycharm  > website) python3 manage.py migrate
+
+/* 	-- when you do change in model and want to reflect that in sql --- 
+(terminal pycharm  > website) python3 manage.py makemigrations
+(terminal pycharm  > website) python3 manage.py migrate
+*/
+
+/* 
+python3 manage.py help
+python3 manage.py createsuperuser
+*/
+
+dtl = django template language
+html - request methods
+django model feilds
+
+
+
+===========>> Useful Links <<=============
+https://www.geeksforgeeks.org/django-models/
+https://www.geeksforgeeks.org/django-orm-inserting-updating-deleting-data/
+https://stackoverflow.com/questions/35602049/how-to-insert-data-to-django-database-from-views-py-file
+https://www.geeksforgeeks.org/python-uploading-images-in-django/
+
+
+
+======================>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<=================================
+
+what is form in django :: it convert your form(python) into HTML automatically .. using syntax as --  {{ form.as_p }}
+
+======================>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<=================================
+
+By -default -- charfiled can store upto 50 characters
